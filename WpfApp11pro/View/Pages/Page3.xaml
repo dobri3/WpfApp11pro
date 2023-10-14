@@ -1,0 +1,42 @@
+﻿<Page x:Class="WpfApp11pro.View.Pages.Page3"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp11pro.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page3">
+
+    <Grid Background="DarkViolet">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width ="500"/>
+            <ColumnDefinition Width ="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height ="40"/>
+            <RowDefinition Height ="*"/>
+        </Grid.RowDefinitions>
+        <Button
+            Style="{StaticResource Back}"
+            Click="Back_Click"/>
+        <Button 
+            Style="{StaticResource Exit}"
+            Click="Close_Click"/>
+        <StackPanel
+            Grid.Row="1"
+            Style="{StaticResource StBs}">
+            <TextBlock TextWrapping="Wrap"
+                       Foreground="White"
+                       Style="{StaticResource Base}"
+                Text="Визуальная новелла, также визуальный роман — жанр компьютерных игр, подвид текстового квеста, в котором зрителю демонстрируется история при помощи вывода на экран текста, статичных (либо анимированных) изображений, а также звукового и/или музыкального сопровождения. Нередко используются и вставки полноценных видеороликов. Степень интерактивности в таких играх обычно низка, и от зрителя лишь изредка требуется сделать определённый выбор, в частности — выбрать вариант ответа в диалоге. Персонажи этих игр обычно выполнены в стиле аниме, который, как и визуальные новеллы, возник в Японии. На 2012 год этот жанр остаётся популярным прежде всего в Японии, где находятся большинство ведущих разработчиков, но набирает популярность и в других странах."/>
+        </StackPanel>
+        <StackPanel
+            Grid.Row="1"
+            Grid.Column="1"
+            Style="{StaticResource StBs}">
+            <Image Source="/Images/Renpy.png"
+                   Height="300"/>
+        </StackPanel>
+    </Grid>
+</Page>
